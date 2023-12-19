@@ -3,19 +3,16 @@
 
 {
     'name': 'Openbiblica',
-    'version': '1.4',
+    'version': '17.0.1.0',
     'category': 'Education',
     'description': "Bible Study and Translation Platform",
     'website': 'https://www.openbiblica.com',
     'summary': 'Study and translate bible',
-    'sequence': 1,
     'author': 'Openbiblica',
     'depends': ['web', 'website'],
-    'data': [
-#        'security/note_security.xml',
+    'data': ['data/ir_sequence.xml',
         'security/ir.model.access.csv',
         'data/language_data.xml',
-#        'menus/menu.xml',
         'views/dictionary_views.xml',
         'views/bible_views.xml',
         'web/portal_templates.xml',
@@ -24,10 +21,32 @@
         'web/chapter_templates.xml',
         'web/installer_templates.xml',
         'web/verse_templates.xml',
-        'web/dictionary_templates.xml',
-        #        'views/note_templates.xml',
-    ],
+        'web/dictionary_templates.xml'],
+    'qweb': ['static/src/xml/*.xml'], 
+    'assets': {
+        'web.assets_backend': [
+            ('include', 'openbiblica/static/src/css/web_assets_backend.css'),
+            ('include', 'openbiblica/static/src/js/web_assets_backend.js'),
+        ],
+        'web.assets_frontend': [
+            ('include', 'openbiblica/static/src/css/web_assets_frontend.css'),
+            ('include', 'openbiblica/static/src/js/web_assets_frontend.js'),
+            ('include', 'openbiblica/static/src/js/temp.js'),
+            ('include', 'openbiblica/static/src/js/transliterate.js'),
+            ('include', 'openbiblica/static/src/js/website_openbiblica.js'),                                    
+        ],
+        'web.assets_common': [
+            ('include', 'openbiblica/static/src/css/web_assets_common.css'),
+            ('include', 'openbiblica/static/src/js/web_assets_common.js'),
+        ],
+    },
+    'external_dependencies': {
+        'python': [
+            'transliterate',
+        ],        
+      },  
     'installable': True,
     'application': True,
     'auto_install': False,
+    'license': 'OPL-1',
 }

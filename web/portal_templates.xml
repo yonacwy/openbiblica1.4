@@ -14,12 +14,6 @@
         <field name="sequence" type="int">20</field>
     </record>
 
-    <template id="assets_frontend" inherit_id="website.assets_frontend" name="Portal Assets">
-        <xpath expr="//script[last()]" position="after">
-            <script type="text/javascript" src="/openbiblica/static/src/js/website_openbiblica.js"/>
-            <script type="text/javascript" src="/openbiblica/static/src/js/transliterate.js"/>
-        </xpath>
-    </template>
 
     <template id="editor_mode" inherit_id="portal.frontend_layout">
         <xpath expr="//t[@t-call='portal.user_dropdown']" position="before">
