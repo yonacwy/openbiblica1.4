@@ -16,5 +16,10 @@
         <record id="lang_4" model="openbiblica.lang">
             <field name="name">Indonesia</field>
         </record>
+        <record id="lang_5" model="openbiblica.lang">
+            <field name="name">Tsalagi</field>
+            <field name="allow_dictionary">True</field>
+            <field name="direction">rtl</field>
+        </record>        
     </data>
 </odoo>
