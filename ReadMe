@@ -28,3 +28,22 @@ NOTE
 restart server on google cloud:
 sudo /opt/bitnami/ctlscript.sh restart
 
+++++++++++++++++++++
+
+NOTE
+The sudo ./use_odoo did not work for me so the work around is install webmin 
+and manually add transliterate from and to these paths
+
+From
+/home/bitnami/.local/lib/python3.11/site-packages
+To
+/opt/bitnami/odoo/venv/lib/python3.11/site-packages
+
+	LINUX
+	cd /opt/bitnami/
+	sudo ./use_odoo
+	pip install transliterate
+
+Also let me know if any issues its installed on Odoo 17.0-20231105 (Community Edition) 
+
+Still need to do more testing to confirm everything is working
