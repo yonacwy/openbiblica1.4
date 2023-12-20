@@ -15,6 +15,7 @@
         'data/language_data.xml',
         'views/dictionary_views.xml',
         'views/bible_views.xml',
+        'views/menus.xml',
         'web/portal_templates.xml',
         'web/bible_templates.xml',
         'web/book_templates.xml',
