@@ -5,91 +5,301 @@
         <!-- Main Menu -->       
         <menuitem name="OpenBiblica"
             id="menu_openbiblica_openbiblica"
-            sequence="1" />
+            sequence="0" />
             
         <!-- Menu -->
         <menuitem name="Bibles"
             id="menu_openbiblica_bible"
             action="act_openbiblica_bible_view"
             parent="openbiblica.menu_openbiblica_openbiblica"
-            sequence="2" />          
+            sequence="1" />          
             
         <!-- Sub Menu -->
         <menuitem name="Books"
             id="menu_openbiblica_book"
             action="act_openbiblica_book_view"
             parent="openbiblica.menu_openbiblica_bible"
-            sequence="201" />  
+            sequence="101" />  
             
         <!-- Sub Menu -->
         <menuitem name="Chapters"
             id="menu_openbiblica_chapter"
             action="act_openbiblica_chapter_view"
             parent="openbiblica.menu_openbiblica_bible"
-            sequence="202" />     
+            sequence="102" />     
             
         <!-- Sub Menu -->
         <menuitem name="Verses"
             id="menu_openbiblica_verse"
             action="act_openbiblica_verse_view"
             parent="openbiblica.menu_openbiblica_bible"
-            sequence="203" />                                         
+            sequence="103" />                                         
             
         <!-- Menu -->
         <menuitem name="Dictionaries"
             id="menu_openbiblica_dictionary"
             action="act_openbiblica_word_view"
             parent="openbiblica.menu_openbiblica_openbiblica"
-            sequence="3" />               
+            sequence="2" />               
 
         <!-- Sub Menu -->
         <menuitem name="Words"
             id="menu_openbiblica_word"
             action="act_openbiblica_word_view"
             parent="openbiblica.menu_openbiblica_dictionary"
-            sequence="301" />          
+            sequence="201" />          
                   
         <!-- Sub Menu -->
         <menuitem name="Meanings"
             id="menu_openbiblica_meaning"
             action="act_openbiblica_meaning_view"
             parent="openbiblica.menu_openbiblica_dictionary"
-            sequence="302" />   
+            sequence="202" />   
 
         <!-- Sub Menu -->
         <menuitem name="Meanings"
             id="menu_openbiblica_meaning"
             action="act_openbiblica_meaning_view"
             parent="openbiblica.menu_openbiblica_dictionary"
-            sequence="303" />   
+            sequence="203" />   
+ 
+         <!-- Menu -->
+        <menuitem name="Concordances"
+            id="menu_openbiblica_concordances"
+            action="act_openbiblica_dictionary_view"
+            parent="openbiblica.menu_openbiblica_openbiblica"
+            sequence="3" />  
+            
+        <!-- Sub Menu -->
+        <menuitem name="Numbers"
+            id="menu_openbiblica_numbers"
+            action="act_openbiblica_meaning_view"
+            parent="openbiblica.menu_openbiblica_concordances"
+            sequence="301" />     
+            
+        <!-- Sub Menu -->
+        <menuitem name="Thesaurus"
+            id="menu_openbiblica_thesaurus"
+            action="act_openbiblica_meaning_view"
+            parent="openbiblica.menu_openbiblica_concordances"
+            sequence="302" />       
+            
+        <!-- Sub Menu -->
+        <menuitem name="References"
+            id="menu_openbiblica_references"
+            action="act_openbiblica_meaning_view"
+            parent="openbiblica.menu_openbiblica_concordances"
+            sequence="303" />                                 
+ 
+         <!-- Menu -->
+        <menuitem name="Commentaries"
+            id="menu_openbiblica_commentaries"
+            action="act_openbiblica_dictionary_view"
+            parent="openbiblica.menu_openbiblica_openbiblica"
+            sequence="4" />  
+            
+        <!-- Sub Menu -->
+        <menuitem name="Whole Bible"
+            id="menu_openbiblica_whole_bible"
+            action="act_openbiblica_meaning_view"
+            parent="openbiblica.menu_openbiblica_commentaries"
+            sequence="401" />    
+            
+        <!-- Sub Menu -->
+        <menuitem name="OT and NT"
+            id="menu_openbiblica_ot_and_nt"
+            action="act_openbiblica_meaning_view"
+            parent="openbiblica.menu_openbiblica_commentaries"
+            sequence="402" /> 
+            
+        <!-- Sub Menu -->
+        <menuitem name="Assortment"
+            id="menu_openbiblica_assortment"
+            action="act_openbiblica_meaning_view"
+            parent="openbiblica.menu_openbiblica_commentaries"
+            sequence="403" />         	
+            
+         <!-- Menu -->
+        <menuitem name="Historical"
+            id="menu_openbiblica_historical"
+            action="act_openbiblica_dictionary_view"
+            parent="openbiblica.menu_openbiblica_openbiblica"
+            sequence="5" />     
+            
+        <!-- Sub Menu -->
+        <menuitem name="Maps"
+            id="menu_openbiblica_maps"
+            action="act_openbiblica_meaning_view"
+            parent="openbiblica.menu_openbiblica_historical"
+            sequence="501" />              
+            
+        <!-- Sub Menu -->
+        <menuitem name="Timeline"
+            id="menu_openbiblica_timeline"
+            action="act_openbiblica_meaning_view"
+            parent="openbiblica.menu_openbiblica_historical"
+            sequence="502" />    
+            
+        <!-- Sub Menu -->
+        <menuitem name="Economy"
+            id="menu_openbiblica_economy"
+            action="act_openbiblica_meaning_view"
+            parent="openbiblica.menu_openbiblica_historical"
+            sequence="503" />                                     	            
+            
+        <!-- Menu -->
+        <menuitem name="Library"
+            id="menu_openbiblica_library"
+            action="act_openbiblica_dictionary_view"
+            parent="openbiblica.menu_openbiblica_openbiblica"
+            sequence="7" />   
+            
+        <!-- Sub Menu -->
+        <menuitem name="Encyclopedia"
+            id="menu_openbiblica_encyclopedia"
+            action="act_openbiblica_meaning_view"
+            parent="openbiblica.menu_openbiblica_library"
+            sequence="701" />     
+            
+        <!-- Sub Menu -->
+        <menuitem name="Literature"
+            id="menu_openbiblica_literature"
+            action="act_openbiblica_meaning_view"
+            parent="openbiblica.menu_openbiblica_library"
+            sequence="702" />                                     
+            
+        <!-- Sub Menu -->
+        <menuitem name="Documents"
+            id="menu_openbiblica_documents"
+            action="act_openbiblica_meaning_view"
+            parent="openbiblica.menu_openbiblica_library"
+            sequence="703" />              
+            
+        <!-- Menu -->
+        <menuitem name="Ministry"
+            id="menu_openbiblica_ministry"
+            action="act_openbiblica_dictionary_view"
+            parent="openbiblica.menu_openbiblica_openbiblica"
+            sequence="8" /> 
+            
+        <!-- Sub Menu -->
+        <menuitem name="Sermons"
+            id="menu_openbiblica_documents"
+            action="act_openbiblica_meaning_view"
+            parent="openbiblica.menu_openbiblica_ministry"
+            sequence="801" />  
+            
+        <!-- Sub Menu -->
+        <menuitem name="Devotionals"
+            id="menu_openbiblica_Devotionals"
+            action="act_openbiblica_meaning_view"
+            parent="openbiblica.menu_openbiblica_ministry"
+            sequence="802" />    
+            
+        <!-- Sub Menu -->
+        <menuitem name="Topical"
+            id="menu_openbiblica_topical"
+            action="act_openbiblica_meaning_view"
+            parent="openbiblica.menu_openbiblica_ministry"
+            sequence="803" />
+            
+        <!-- Sub Menu -->
+        <menuitem name="Reading Plan"
+            id="menu_openbiblica_reading_plan"
+            action="act_openbiblica_meaning_view"
+            parent="openbiblica.menu_openbiblica_ministry"
+            sequence="804" />                                                            
+            
+        <!-- Menu -->
+        <menuitem name="Tools"
+            id="menu_openbiblica_tools"
+            action="act_openbiblica_dictionary_view"
+            parent="openbiblica.menu_openbiblica_openbiblica"
+            sequence="9" /> 
+            
+        <!-- Sub Menu -->
+        <menuitem name="Editing"
+            id="menu_openbiblica_editing"
+            action="act_openbiblica_meaning_view"
+            parent="openbiblica.menu_openbiblica_tools"
+            sequence="901" />
+            
+        <!-- Child Sub Menu -->
+        <menuitem name="Changes"
+            id="menu_openbiblica_changes"
+            action="act_openbiblica_meaning_view"
+            parent="openbiblica.menu_openbiblica_editing"
+            sequence="9001" />            
+            
+        <!-- Child Sub Menu -->
+        <menuitem name="Checks"
+            id="menu_openbiblica_checks"
+            action="act_openbiblica_meaning_view"
+            parent="openbiblica.menu_openbiblica_editing"
+            sequence="9002" /> 
+            
+        <!-- Child Sub Menu -->
+        <menuitem name="Consistency"
+            id="menu_openbiblica_consistency"
+            action="act_openbiblica_meaning_view"
+            parent="openbiblica.menu_openbiblica_editing"
+            sequence="9003" /> 
+            
+        <!-- Sub Menu -->
+        <menuitem name="Notes"
+            id="menu_openbiblica_notes"
+            action="act_openbiblica_meaning_view"
+            parent="openbiblica.menu_openbiblica_tools"
+            sequence="902" />  
+            
+        <!-- Sub Menu -->
+        <menuitem name="Journal"
+            id="menu_openbiblica_journal"
+            action="act_openbiblica_meaning_view"
+            parent="openbiblica.menu_openbiblica_tools"
+            sequence="903" />    
+            
+        <!-- Sub Menu -->
+        <menuitem name="Study"
+            id="menu_openbiblica_study"
+            action="act_openbiblica_meaning_view"
+            parent="openbiblica.menu_openbiblica_tools"
+            sequence="904" />                
+            
+        <!-- Sub Menu -->
+        <menuitem name="Teams"
+            id="menu_openbiblica_teams"
+            action="act_openbiblica_meaning_view"
+            parent="openbiblica.menu_openbiblica_tools"
+            sequence="905" /> 
             
         <!-- Menu -->
         <menuitem name="Settings"
             id="menu_openbiblica_settings"
             action="act_openbiblica_dictionary_view"
             parent="openbiblica.menu_openbiblica_openbiblica"
-            sequence="4" />                  
+            sequence="10" />                  
 
         <!-- Sub Menu -->
         <menuitem name="Dictionary"
             id="menu_openbiblica_dictionary_settings"
             action="act_openbiblica_meaning_view"
             parent="openbiblica.menu_openbiblica_settings"
-            sequence="401" />  
+            sequence="20" />  
 
         <!-- Sub Menu -->
         <menuitem name="Language"
             id="menu_openbiblica_language_settings"
             action="act_openbiblica_language_view"
             parent="openbiblica.menu_openbiblica_settings"
-            sequence="402" /> 
+            sequence="30" /> 
 
         <!-- Sub Menu -->
         <menuitem name="User"
             id="menu_openbiblica_user_settings"
             action="act_openbiblica_user_view"
             parent="openbiblica.menu_openbiblica_settings"
-            sequence="403" /> 
+            sequence="40" /> 
 
 
     </data>
