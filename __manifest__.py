@@ -7,7 +7,7 @@
     'category': 'Education',
     'description': "Bible Study and Translation Platform",
     'website': 'https://www.openbiblica.com',
-    'summary': 'Study and translate bible',
+    'summary': 'Study and Translate Bible',
     'author': 'OpenBiblica',
     'depends': ['web', 'website'],
     'data': ['data/ir_sequence.xml',
