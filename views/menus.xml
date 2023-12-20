@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <!-- Main Menu -->       
+        <menuitem name="OpenBiblica"
+            id="menu_openbiblica_openbiblica"
+            sequence="1" />
+            
+        <!-- Menu -->
+        <menuitem name="Bibles"
+            id="menu_openbiblica_bible"
+            action="act_openbiblica_bible_view"
+            parent="openbiblica.menu_openbiblica_openbiblica"
+            sequence="2" />          
+            
+        <!-- Sub Menu -->
+        <menuitem name="Books"
+            id="menu_openbiblica_book"
+            action="act_openbiblica_book_view"
+            parent="openbiblica.menu_openbiblica_bible"
+            sequence="201" />  
+            
+        <!-- Sub Menu -->
+        <menuitem name="Chapters"
+            id="menu_openbiblica_chapter"
+            action="act_openbiblica_chapter_view"
+            parent="openbiblica.menu_openbiblica_bible"
+            sequence="202" />     
+            
+        <!-- Sub Menu -->
+        <menuitem name="Verses"
+            id="menu_openbiblica_verse"
+            action="act_openbiblica_verse_view"
+            parent="openbiblica.menu_openbiblica_bible"
+            sequence="203" />                                         
+            
+        <!-- Menu -->
+        <menuitem name="Dictionaries"
+            id="menu_openbiblica_dictionary"
+            action="act_openbiblica_word_view"
+            parent="openbiblica.menu_openbiblica_openbiblica"
+            sequence="3" />               
+
+        <!-- Sub Menu -->
+        <menuitem name="Words"
+            id="menu_openbiblica_word"
+            action="act_openbiblica_word_view"
+            parent="openbiblica.menu_openbiblica_dictionary"
+            sequence="301" />          
+                  
+        <!-- Sub Menu -->
+        <menuitem name="Meanings"
+            id="menu_openbiblica_meaning"
+            action="act_openbiblica_meaning_view"
+            parent="openbiblica.menu_openbiblica_dictionary"
+            sequence="302" />   
+
+        <!-- Sub Menu -->
+        <menuitem name="Meanings"
+            id="menu_openbiblica_meaning"
+            action="act_openbiblica_meaning_view"
+            parent="openbiblica.menu_openbiblica_dictionary"
+            sequence="303" />   
+            
+        <!-- Menu -->
+        <menuitem name="Settings"
+            id="menu_openbiblica_settings"
+            action="act_openbiblica_dictionary_view"
+            parent="openbiblica.menu_openbiblica_openbiblica"
+            sequence="4" />                  
+
+        <!-- Sub Menu -->
+        <menuitem name="Dictionary"
+            id="menu_openbiblica_dictionary_settings"
+            action="act_openbiblica_meaning_view"
+            parent="openbiblica.menu_openbiblica_settings"
+            sequence="401" />  
+
+        <!-- Sub Menu -->
+        <menuitem name="Language"
+            id="menu_openbiblica_language_settings"
+            action="act_openbiblica_language_view"
+            parent="openbiblica.menu_openbiblica_settings"
+            sequence="402" /> 
+
+        <!-- Sub Menu -->
+        <menuitem name="User"
+            id="menu_openbiblica_user_settings"
+            action="act_openbiblica_user_view"
+            parent="openbiblica.menu_openbiblica_settings"
+            sequence="403" /> 
+
+
+    </data>
+</odoo>
