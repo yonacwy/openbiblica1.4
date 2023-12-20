@@ -2,13 +2,13 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
 {
-    'name': 'Openbiblica',
+    'name': 'OpenBiblica',
     'version': '17.0.1.0',
     'category': 'Education',
     'description': "Bible Study and Translation Platform",
     'website': 'https://www.openbiblica.com',
     'summary': 'Study and translate bible',
-    'author': 'Openbiblica',
+    'author': 'OpenBiblica',
     'depends': ['web', 'website'],
     'data': ['data/ir_sequence.xml',
         'security/ir.model.access.csv',
@@ -41,6 +41,10 @@
             ('include', 'openbiblica/static/src/js/web_assets_common.js'),
         ],
     },
+    'icon': '/openbiblica/static/description/icon.png',
+    'images': [
+        'static/description/banner.png',
+    ],
     'external_dependencies': {
         'python': [
             'transliterate',
