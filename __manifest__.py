@@ -10,7 +10,7 @@
     'summary': 'Study and Translate Bible',
     'author': 'OpenBiblica',
     'depends': ['web', 'website'],
-    'data': ['data/ir_sequence.xml',
+    'data': [
         'security/ir.model.access.csv',
         'data/language_data.xml',
         'views/dictionary_views.xml',
